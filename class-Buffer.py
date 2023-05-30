@@ -5,8 +5,8 @@ class Buffer:
 
     def add(self, *a):
         self.sequence_elements.extend(a)
-        while len(self.sequence_elements) <= 5:
-            print(sum(self.sequence_elements))
+        while len(self.sequence_elements) >= 5:
+            print(sum(self.sequence_elements[0:5]))
             self.sequence_elements = self.sequence_elements[5::]
 
 
